@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Actu TWD - Contact</title>
+		<link rel="stylesheet" type="text/css" href="const.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="contact.css" media="screen" />
+	</head>
+	<body>
+    	<a href="https://www.facebook.com/"><img class="face" src="facebook.png"></a>
+        <a href="https://twitter.com/"><img class="twit" src="twitter.png"></a>
+		<div class="fond">
+			<header>
+				<img  src="twd.jpeg" width="100%" alt="Photo non disponible"/>
+				<h1 class="titre">The Walking Dead</h1>
+                <div id="menu">
+					<ul>
+  						<li><a href="index.html">Accueil</a></li>
+  						<li><a href="#">Médias</a>
+   					 		<ul>
+      							<li><a href="photos.html">Photos</a></li>
+      							<li><a href="video.html">Video</a></li>
+    						</ul>
+  						</li>
+  						<li><a href="famille.html">Biographie</a></li>
+						<li><a style="border-right:none" href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</header>
+			<div id="formulaire">
+            		<h3 id="form"> Formulaire de contact : </h3>
+           			<form name="contact" method="post" action="contact.php">
+					<input class="forme" type="text" name="nom" size="8" value="Nom" maxlenght="4" required/>
+					<br/>
+					<input class="forme" type="email" name="email" size="15" value="Email" maxlenght="4" required/>
+					<br/>
+					<input class="forme" type="tel" name="tel" size="12" value="Telephone" maxlenght="4"/>
+					<br/>
+					<select name="type" size="5">
+						<option value="bug" selected>Bug</option>
+						<option value="amelioration">Amélioration</option>
+						<option value="autres">Autres</option>
+                    <br/>
+					<input class="forme" type="radio" name="previsite" size="1" value="oui"/>Première visite
+					<br/>
+					<input class="forme" type="radio" name="previsite" size="1" value="non"/>Pas première visite
+					<br/>
+					<input class="forme" type="textarea" name="description" value="Description" rows="10" cols="50" required/>
+					<br/>
+					<input class="forme" type="submit" size="5" value="Envoyer"/>
+				</form>
+			</div>
+            <footer class="footer"><div class="footer">© Christophe Chuy et Hugo Dumazeau 2014</div></footer>
+        </div>
+	</body>
+</html>
